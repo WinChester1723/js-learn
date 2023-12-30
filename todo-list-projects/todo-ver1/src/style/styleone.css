@@ -1,0 +1,72 @@
+body {
+  background: #e6e6fa; /* Светло-фиолетовый фон для всей страницы */
+  color: #333; /* Темно-серый цвет текста для контраста */
+  font-family: 'Arial', sans-serif; /* Установка шрифта для всей страницы */
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+  background-color: #f8f8f8; /* Светло-серый фон для контейнера */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc; /* Светло-серый бордюр */
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #b19cd9; /* Светло-фиолетовый цвет для кнопок */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9370db; /* Немного темнее при наведении */
+}
+
+.tasks {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  background-color: #f0f0f0; /* Светло-серый фон для задач */
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task-text {
+  width: 70%;
+}

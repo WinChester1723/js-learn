@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to right, #654ea3, #eaafc8); /* Градиентный фон */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  div {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для контейнера */
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для эффекта "неон" */
+  }
+  
+  input[type="text"], button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px); /* Вычитаем padding */
+    background-color: #bb9dd6; /* Фиолетовый фон для ввода */
+    color: white;
+  }
+  
+  button {
+    background-color: #32a1ce; /* Бирюзовый фон для кнопок */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2196f3; /* Цвет при наведении */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f0f0f0; /* Светло-серый фон для элемента списка */
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень для элемента списка */
+  }
+  
+  li button {
+    background-color: #ff4081; /* Неоново-розовый фон для кнопки удаления */
+    margin-left: 20px;
+  }
+  
+  li button:hover {
+    background-color: #f50057; /* Цвет при наведении */
+  }
