@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form id="registrationForm" action="" name="myForm">
+      <h1>Sign Up</h1>
+      <div class="form-field">
+        <label for="nameForm">Name</label>
+        <input type="text" name="nameForm" id="name" placeholder="Name" />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="form-field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="form-field">
+        <button type="submit" onclick="testRegistration()">Registration</button>
+      </div>
+      <p id="errorMessage"></p>
+    </form>
+
+    <script src="src/JS/script.js"></script>
+  </body>
+</html>

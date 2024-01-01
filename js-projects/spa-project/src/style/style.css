@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to right, #00416A, #E4E5E6); /* Градиентный фон */
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  button {
+    border: 2px solid transparent;
+    background: linear-gradient(90deg, rgba(135,67,255,1) 0%, rgba(234,175,200,1) 100%);
+    background-clip: padding-box;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(135,67,255,0.5), 0 0 20px rgba(234,175,200,0.5); /* Неоновая тень */
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, rgba(135,67,255,0.8) 0%, rgba(234,175,200,0.8) 100%);
+    box-shadow: 0 0 15px rgba(135,67,255,0.75), 0 0 30px rgba(234,175,200,0.75); /* Усиление неоновой тени при наведении */
+  }
+  
+  #content {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для контента */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    min-height: 300px;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Тень для контейнера с контентом */
+  }
+  
+  /* Опционально: стили для активной кнопки */
+  button.active {
+    background: linear-gradient(90deg, rgba(135,67,255,1) 0%, rgba(0,128,128,1) 100%);
+  }
