@@ -1,0 +1,41 @@
+#imageGallery img.enlarged {
+    transform: scale(2); /* Увеличивает изображение в 2 раза */
+    transition: transform 0.3s ease; /* Добавляет плавность увеличения */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Темный фон для выделения изображений */
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Расстояние между изображениями */
+    padding: 20px;
+  }
+  
+  #imageGallery img {
+    width: 150px; /* Фиксированная ширина для изображений */
+    height: 150px; /* Фиксированная высота для изображений */
+    object-fit: cover; /* Обрезка изображений для сохранения пропорций */
+    border-radius: 10px; /* Скругление углов изображений */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Тень для эффекта глубины */
+  }
+  
+  #imageGallery img:hover {
+    transform: scale(1.1); /* Небольшое увеличение при наведении */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Усиление тени при наведении */
+  }
+  
+  #imageGallery img.enlarged {
+    transform: scale(2); /* Увеличивает изображение в 2 раза */
+    z-index: 10; /* Увеличенное изображение будет поверх остальных */
+    position: relative; /* Для работы z-index */
+  }
